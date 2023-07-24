@@ -29,5 +29,5 @@ jobs:
     
     - name: Deploy new app version 
       run: |
-        aws elasticbeanstalk update-environment --environment-name github-user-stats-dev --version-label "version-${{ github.sha }}"
+        aws elasticbeanstalk update-environment --environment-name github-user-stats-env-blue --version-label "version-${{ github.sha }}"
     
